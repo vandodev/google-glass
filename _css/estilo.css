@@ -1,4 +1,10 @@
 @charset "UTF8";
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap');
+@font-face{
+    font-family: "FontLogo";
+    src: url("../_fonts/bubblegum-sans-regular.otf");
+}
+
 body{
     background-color: #dddddd;
     color: rgba(0, 0, 0, 1);
@@ -29,7 +35,7 @@ background: url("../_imagens/glass-logo-peq.jpg") no-repeat 0px 80px;
 }
 
 header#cabecalho h1{
-font-family: Arial,sans-serif;
+font-family: 'FontLogo',sans-serif;
 font-size: 30pt;
 color: #606060;
 text-shadow: 1px 1px 1px rgba(0,0,0.6);
@@ -37,7 +43,7 @@ padding: 0px;
 margin-bottom: 0px;
 }
 header#cabecalho h2{
-    font-family: Arial,sans-serif;
+    font-family: 'Bubblegum Sans';
     font-size: 15pt;
     color: #888888;
     padding: 0px;
