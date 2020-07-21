@@ -10,6 +10,14 @@
     </head>
 <script Language="javascript" src="_javascript/funcoes.js"></script>
 
+<script>
+    function calc_total(){
+        var qtd = parseInt(document.getElementById('cQtd').value);
+        tot = qtd*1500;
+        document.getElementById('cTot').value = tot;
+    }
+</script>
+
 <body>
 
 <div id="interface">  
@@ -36,7 +44,7 @@
 </nav>  
 </header>
 
-<form  method="POST" id="fContato" action="">
+<form  method="POST" id="fContato" action="" oninput="calc_total()">
 
     <fieldset id="usuario">
        <legend> Identificação do Usuário</legend>
@@ -92,7 +100,7 @@
                 Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="5">Max
         </p> 
            <p><label for=""> Mensagem:</label>
-        <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Digite sua mensagem"></textarea>
+        <textarea name="tMsg" id="cMsg" cols="35" rows="5" placeholder="Digite sua mensagem"></textarea>
         </p>
     </fieldset>
 
